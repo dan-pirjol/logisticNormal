@@ -1,0 +1,12 @@
+Package: logisticNormal
+Title: Computes the logistic-normal integral using the Poisson summation formula
+Version: 0.0.0.9000
+Authors@R: 
+    person("Dan", "Pirjol", , "dpirjol@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: The package has functions which compute the average of a logistic-normal random variable.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.2.9000
