@@ -38,7 +38,7 @@ vd <- data.frame("exact"=v1, "Poisson" = v2, "diff"=v3)
 vd
 ```
 
-Keeping N=10 terms in the Poisson sum, the error is reasonably small for t = 1:10
+Keeping N=10 terms in the Poisson sum, the error is reasonably small over the entire range of t
 
 <img width="312" alt="test2" src="https://user-images.githubusercontent.com/60016102/204109785-b503943a-b339-4984-831d-ab8b58c1115b.png">
 
