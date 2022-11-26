@@ -27,7 +27,7 @@ Numerical evaluation comparing with exact results (blue dots)
 ![test1](https://user-images.githubusercontent.com/60016102/204109670-daa6e5b0-8561-481a-9f80-549608d81698.png)
 
 ```
-# compare the Poisson summation formula with the exact evaluation (t=1.0)
+# compare the Poisson summation formula with the exact evaluation (t=1.0 - 50.0)
 t <- 1.0
 v1 <- c()
 v2 <- c()
