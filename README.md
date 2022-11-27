@@ -3,6 +3,12 @@ R package with functions for the evaluation of the logistic-normal integral usin
 
 >D.Pirjol, The logistic-normal integral and its generalizations, Journal of Computational and Applied Mathematics 237, 460-469 (2012)
 
+In this paper the logistic-normal integral is defined as $$\varphi(z,t)=\int_{-\infty}^\infty \frac{1}{1+e^x} e^{-\frac{1}{2t}(x-z)^2} \frac{dx}{\sqrt{2\pi t}}$$
+
+The function \texttt{phiLogisticNormal(z,t,Nmax)} evaluates $\varphi(z,t)$ by Poisson summation truncating the sum to $Nmax$ terms.
+
+The function \texttt{phiLNexact(t,k)} with $k\in \mathbb{Z}$ gives the exact value of $\varphi(kt, t)$ 
+
 ## **Sample usage**
 
 ```
