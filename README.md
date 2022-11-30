@@ -56,7 +56,7 @@ Keeping N=10 terms in the Poisson sum, the error is reasonably small for t suffi
 <img width="312" alt="test2" src="https://user-images.githubusercontent.com/60016102/204109785-b503943a-b339-4984-831d-ab8b58c1115b.png">
 
 For small t, the exact evaluation gives the values of $\varphi(z,t)$ over a fine grid, and its values can be obtained by interpolation.
-The example below shows $t=0.1$.
+In the example below the blue dots show the exact values for $\varphi(k t, t)$ with $t=0.1$.
 
 <img width="697" alt="varphit0p1" src="https://user-images.githubusercontent.com/60016102/204840327-ea06d9eb-72ba-4068-8590-438c3b5df258.png">
 
