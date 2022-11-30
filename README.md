@@ -51,10 +51,14 @@ vd <- data.frame("exact"=v1, "Poisson" = v2, "diff"=v3)
 vd
 ```
 
-Keeping N=10 terms in the Poisson sum, the error is reasonably small over the entire range of t
+Keeping N=10 terms in the Poisson sum, the error is reasonably small for t sufficiently large (above 0.5), and all x.
 
 <img width="312" alt="test2" src="https://user-images.githubusercontent.com/60016102/204109785-b503943a-b339-4984-831d-ab8b58c1115b.png">
 
+For small t, the exact evaluation gives the values of $\varphi(z,t)$ over a fine grid, and its values can be obtained by interpolation.
+The example below shows $t=0.1$.
+
+<img width="697" alt="varphit0p1" src="https://user-images.githubusercontent.com/60016102/204840327-ea06d9eb-72ba-4068-8590-438c3b5df258.png">
 
 
 
