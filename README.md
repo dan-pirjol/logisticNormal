@@ -1,11 +1,10 @@
 # logisticNormal
-R package with functions for the evaluation of the logistic-normal integral using the methods proposed in 
+R functions for the evaluation of the logistic-normal integral using the methods proposed in 
 
 >D.Pirjol, The logistic-normal integral and its generalizations, Journal of Computational and Applied Mathematics 237, 460-469 (2012)
 
 In this paper the logistic-normal integral is defined as $$\varphi(z,t)=\int_{-\infty}^\infty \frac{1}{1+e^x} e^{-\frac{1}{2t}(x-z)^2} \frac{dx}{\sqrt{2\pi t}}$$
 
-This is related to the expectation of a logistic-normal random variable $X \sim logitnorm(\mu,\sigma)$ which is defined as $X=\frac{1}{1+e^{-Z}}$ with $Z\sim N(\mu,\sigma)$ as $$\mathbb{E}[X]=\varphi(-\mu,\sigma^2)$$
 The logistic-normal integral is related to the Mordell integral, and is quasi-periodic along the real and imaginary directions in the $x$ variable. See:
 
 >D. Pirjol, Addendum: The logistic-normal integral and its generalizations, Journal of Computational and Applied Mathematics 237, 460-469 (2013)
@@ -13,6 +12,12 @@ The logistic-normal integral is related to the Mordell integral, and is quasi-pe
 The function **phiLogisticNormal(z,t,Nmax)** evaluates $\varphi(z,t)$ by Poisson summation truncating the sum to $Nmax$ terms. 
 
 The function **phiLNexact(t,k)** with $k\in \mathbb{Z}$ gives the exact value of $\varphi(kt, t)$ 
+
+The function **phiLinearInterp(x,t)** computes $\varphi(x,t)$ by interpolation from the exact values at the points $(kt,(k+1)t)$ bracketing $x$
+
+**Relation to logistic-normal random variables**
+
+The logistic-normal random variable $X \sim logitnorm(\mu,\sigma)$ is defined as $X=\frac{1}{1+e^{-Z}}$ with $Z\sim N(\mu,\sigma)$. The logistic-normal integral is related to the expectation of such a random variable as $$\mathbb{E}[X]=\varphi(-\mu,\sigma^2)$$
 
 ## **Sample usage**
 
