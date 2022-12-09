@@ -13,7 +13,7 @@ The function **phiLogisticNormal(z,t,Nmax)** evaluates $\varphi(z,t)$ by Poisson
 
 The function **phiLNexact(t,k)** with $k\in \mathbb{Z}$ gives the exact value of $\varphi(kt, t)$ 
 
-The function **phiLinearInterp(x,t)** computes $\varphi(x,t)$ by interpolation from the exact values at the points $(kt,(k+1)t)$ bracketing $x$
+The function **phiLinearInterp(x,t)** computes $\varphi(x,t)$ by linear interpolation from the exact values at the points $(kt,(k+1)t)$ bracketing $x$
 
 **Relation to logistic-normal random variables**
 
