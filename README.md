@@ -5,7 +5,16 @@ R functions for the evaluation of the logistic-normal integral using the methods
 
 In this paper the logistic-normal integral is defined as $$\varphi(z,t)=\int_{-\infty}^\infty \frac{1}{1+e^x} e^{-\frac{1}{2t}(x-z)^2} \frac{dx}{\sqrt{2\pi t}}$$
 
-The logistic-normal integral is related to the Mordell integral, and is quasi-periodic along the real and imaginary directions in the $x$ variable. See:
+The function $\varphi(z,t)$ has the properties:
+
+* Its values for positive and negative argument $z$ are related as $\varphi(z,t) + \varphi(-z,t)=1$
+
+* For any $z\in \mathbb{R}$, we have $\varphi(z+t,t)= e^{-z-\frac12 t} (1 - \varphi(z,t))$
+
+The recursion relation implies that knowledge of $\varphi(z,t)$ in an interval in $z$ of length $t$ is sufficient to determine it anywhere else.
+In particular, using $\varphi(0,t)=\frac12$ (which follows by taking $z=0$ in the first relation), gives exact evaluations at $z=kt$ with $k\in \mathbb{Z}$. The recursion relation gives also a Poisson summation formula for $\varphi(z,t)$. 
+
+$\varphi(z,t)$ is related to the Mordell integral. See:
 
 >D. Pirjol, Addendum: The logistic-normal integral and its generalizations, Journal of Computational and Applied Mathematics 237, 460-469 (2013)
 
