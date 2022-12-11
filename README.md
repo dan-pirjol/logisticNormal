@@ -22,7 +22,24 @@ The function **phiLogisticNormal(z,t,Nmax)** evaluates $\varphi(z,t)$ by Poisson
 
 The function **phiLNexact(t,k)** with $k\in \mathbb{Z}$ gives the exact value of $\varphi(kt, t)$ 
 
-The function **phiLinearInterp(x,t)** computes $\varphi(x,t)$ by linear interpolation from the exact values at the points $(kt,(k+1)t)$ bracketing $x$
+The function **phiLinInterp(x,t)** computes $\varphi(x,t)$ by linear interpolation from the exact values at the points $(kt,(k+1)t)$ bracketing $x$
+
+**Generalized logistic-normal integrals**
+
+Define the generalized logistic-normal integrals 
+$$\varphi_j(z,t) = \int_{-\infty}^\infty \frac{x^j}{1+e^x} e^{-\frac{1}{2t}(x-z)^2} \frac{dx}{\sqrt{2\pi t}} , \quad j=1,2,\cdots$$
+
+The functions $\varphi_j(z,t)$ can be evaluated exactly on certain grids of points $z$ with step $t$:
+
++ Even index $j=0,2,4,\cdots$ can be evaluated exactly at $z_k=kt$ with $k\in \mathbb{Z}$. For example $\varphi_2(0,t)=\frac12 t$
+
++ Odd index $j=1,3,5,\cdots$ can be evaluated exactly at $z_k=(k+1/2)t$ with $k\in \mathbb{Z}$. For example $\varphi_1(\frac12,t)=0$
+
+The derivatives of the logistic-normal integral with respect to $z$ are expressed in terms of these functions 
+
+$$\varphi'(z,t) = -\frac{z}{t} \varphi(z,t) + \frac{1}{t} \varphi_1(z,t)$$
+
+$$\varphi''(z,t) = (\frac{z^2}{t^2} - \frac{1}{t} ) \varphi(z,t) - \frac{2x}{t^2} \varphi_1(z,t) + \frac{1}{t^2} \varphi_2(z,t)$ 
 
 **Relation to logistic-normal random variables**
 
