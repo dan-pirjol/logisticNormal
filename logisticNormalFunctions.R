@@ -134,3 +134,40 @@ phiLNexact <- function(t, k){
   
 }
 #-------------------------------------------------
+#computes phi(z,t) by linear interpolation between closest integer multiples of t. 
+# err < 1/8*t^2*max|phi''(z,t)|
+###################################
+phiLinInterp <- function(x, t){
+  
+  xs <- x
+  x <- abs(x)
+  
+  k = floor(x/t)
+  print(k)
+  
+  if (x-k*t==0) {
+    y <- phiLNexact(t,k)
+    err <- 0
+  }
+  
+  else{
+    y1 <- phiLNexact(t,k)
+    y2 <- phiLNexact(t,k+1)
+    y3 <- phiLNexact(t,k+2)
+    
+    
+    x1 <- k*t
+    x2 <- (k+1)*t
+    
+    y <- y1 + (y2-y1)/(x2-x1)*(x-x1)
+    
+    phi2 <- (y1+y3-2*y2)/t^2
+    err <- 1/8*t^2*phi2
+  }
+  
+  if (xs < 0) y <- 1- y
+  
+  yerr <- c(y,err)
+  
+  return (yerr)
+}
