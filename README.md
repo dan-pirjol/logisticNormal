@@ -35,15 +35,21 @@ The functions $\varphi_j(z,t)$ can be evaluated exactly on certain grids of poin
 
 + Odd index $j=1,3,5,\cdots$ can be evaluated exactly at $z_k=(k+1/2)t$ with $k\in \mathbb{Z}$. For example $\varphi_1(\frac12,t)=0$
 
-The derivatives of the logistic-normal integral with respect to $z$ are expressed in terms of these functions 
+The derivatives of the logistic-normal integral can be expressed in terms of these functions 
 
-$$\varphi'(z,t) = -\frac{z}{t} \varphi(z,t) + \frac{1}{t} \varphi_1(z,t)$$
+$$\partial_z \varphi(z,t) = -\frac{z}{t} \varphi(z,t) + \frac{1}{t} \varphi_1(z,t)$$
 
-$$\varphi''(z,t) = (\frac{z^2}{t^2} - \frac{1}{t} ) \varphi(z,t) - \frac{2x}{t^2} \varphi_1(z,t) + \frac{1}{t^2} \varphi_2(z,t)$ 
+$$\partial_z^2 \varphi(z,t) = (\frac{z^2}{t^2} - \frac{1}{t} ) \varphi(z,t) - \frac{2x}{t^2} \varphi_1(z,t) + \frac{1}{t^2} \varphi_2(z,t)$$
+
+$$t \partial_t \varphi(z,t) = \varphi_1(z,t) - z \varphi(z,t)$$
 
 **Relation to logistic-normal random variables**
 
-The logistic-normal random variable $X \sim logitnorm(\mu,\sigma)$ is defined as $X=\frac{1}{1+e^{-Z}}$ with $Z\sim N(\mu,\sigma)$. The logistic-normal integral is related to the expectation of such a random variable as $$\mathbb{E}[X]=\varphi(-\mu,\sigma^2)$$
+The logistic-normal random variable $X \sim logitnorm(\mu,\sigma)$ is defined as $X=\frac{1}{1+e^{-Z}}$ with $Z\sim N(\mu,\sigma)$. The expectation and higher moments of $X$ are expressed in terms of the logistic-normal integral and its generalizations 
+
+$$\mathbb{E}[X]=\varphi(-\mu,\sigma^2)$$
+
+$$\mathbb{E}[X^2] = e^{\mu+\frac12\sigma^2} \Big( -\frac{1}{t} \varphi_1(-(\mu+\sigma^2),\sigma^2) - (\mu+\sigma^2) \varphi(-(\mu+\sigma^2),\sigma^2)\Big) $$
 
 ## **Sample usage**
 
