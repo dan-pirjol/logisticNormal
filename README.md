@@ -31,7 +31,7 @@ $$\varphi_j(z,t) = \int_{-\infty}^\infty \frac{x^j}{1+e^x} e^{-\frac{1}{2t}(x-z)
 
 The functions $\varphi_j(z,t)$ can be evaluated exactly on certain grids of points $z$ with step $t$:
 
-+ Even index $j=0,2,4,\cdots$ can be evaluated exactly at $z_k=kt$ with $k\in \mathbb{Z}$. For example $\varphi_2(0,t)=\frac12 t$
++ Even index $j=0,2,4,\cdots$ can be evaluated exactly at $z_k=kt$ with $k\in \mathbb{Z}$. For example $\varphi(0,t)=\frac12,\varphi_2(0,t)=\frac12 t$
 
 + Odd index $j=1,3,5,\cdots$ can be evaluated exactly at $z_k=(k+1/2)t$ with $k\in \mathbb{Z}$. For example $\varphi_1(\frac12,t)=0$
 
@@ -39,7 +39,7 @@ The derivatives of the logistic-normal integral can be expressed in terms of the
 
 $$\partial_z \varphi(z,t) = -\frac{z}{t} \varphi(z,t) + \frac{1}{t} \varphi_1(z,t)$$
 
-$$\partial_z^2 \varphi(z,t) = (\frac{z^2}{t^2} - \frac{1}{t} ) \varphi(z,t) - \frac{2x}{t^2} \varphi_1(z,t) + \frac{1}{t^2} \varphi_2(z,t)$$
+$$\partial_z^2 \varphi(z,t) = (\frac{z^2}{t^2} - \frac{1}{t} ) \varphi(z,t) - \frac{2z}{t^2} \varphi_1(z,t) + \frac{1}{t^2} \varphi_2(z,t)$$
 
 $$t \partial_t \varphi(z,t) = \varphi_1(z,t) - (z+\frac12) \varphi(z,t)$$
 
