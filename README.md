@@ -49,7 +49,7 @@ The logistic-normal random variable $X \sim logitnorm(\mu,\sigma)$ is defined as
 
 $$\mathbb{E}[X]=\varphi(-\mu,\sigma^2)$$
 
-$$\mathbb{E}[X^2] = e^{-\mu+\frac12\sigma^2} \Big( -\frac{1}{\sigma^2} \varphi_1(-\mu+\sigma^2,\sigma^2) + (1 - \frac{\mu}{\sigma^2}) \varphi(-\mu+\sigma^2,\sigma^2)\Big) $$
+$$\mathbb{E}[X^2] = e^{\mu+\frac12\sigma^2} \Big( -\frac{1}{\sigma^2} \varphi_1(-\mu-\sigma^2,\sigma^2) - (1 + \frac{\mu}{\sigma^2}) \varphi(-\mu-\sigma^2,\sigma^2)\Big) $$
 
 ## **Sample usage**
 
