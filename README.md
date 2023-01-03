@@ -37,11 +37,11 @@ The functions $\varphi_j(z,t)$ can be evaluated exactly on certain grids of poin
 
 The derivatives of the logistic-normal integral can be expressed in terms of these functions. For example, the first few derivatives are given below.
 
-$$\partial_z \varphi(z,t) = -\frac{z}{t} \varphi(z,t) + \frac{1}{t} \varphi_1(z,t)$$
+$$\partial_z \varphi(z,t) = -\frac{z}{t} \varphi(z,t) + \frac{1}{t} \varphi_1(z,t) \qquad (1)$$
 
-$$\partial_z^2 \varphi(z,t) = (\frac{z^2}{t^2} - \frac{1}{t} ) \varphi(z,t) - \frac{2z}{t^2} \varphi_1(z,t) + \frac{1}{t^2} \varphi_2(z,t)$$
+$$\partial_z^2 \varphi(z,t) = (\frac{z^2}{t^2} - \frac{1}{t} ) \varphi(z,t) - \frac{2z}{t^2} \varphi_1(z,t) + \frac{1}{t^2} \varphi_2(z,t)\qquad (2)$$
 
-$$t \partial_t \varphi(z,t) = \varphi_1(z,t) - (z+\frac12) \varphi(z,t)$$
+$$t \partial_t \varphi(z,t) = \varphi_1(z,t) - (z+\frac12) \varphi(z,t)\qquad (3)$$
 
 **Relation to logistic-normal random variables**
 
@@ -96,7 +96,7 @@ For small t, the exact evaluation gives the values of $\varphi(z,t)$ on a fine g
 
 <img width="697" alt="varphit0p1" src="https://user-images.githubusercontent.com/60016102/204840327-ea06d9eb-72ba-4068-8590-438c3b5df258.png">
 
-The function **varphi1(z,t,Nmax,eps)** computes $\varphi_1(z,t)$ by central finite differences in $z$ with step $eps$. Default values $Nmax=12,eps=10^{-6}$
+The function **varphi1(z,t,Nmax,eps)** computes $\varphi_1(z,t)$ using (1) by central finite differences in $z$ with step $eps$. Default values $Nmax=12,eps=10^{-6}$
 
 The function **momentsLogisticNorm(mu,sig,Nmax)** computes the mean and variance of a logistic-normal random variable $Z \sim logitnorm(\mu,\sigma)$
 
