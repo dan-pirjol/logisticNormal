@@ -45,7 +45,7 @@ $$t \partial_t \varphi(z,t) = \varphi_1(z,t) - (z+\frac12) \varphi(z,t)$$
 
 **Relation to logistic-normal random variables**
 
-The logistic-normal random variable $X \sim logitnorm(\mu,\sigma)$ is defined as $X=\frac{1}{1+e^{-Z}}$ with $Z\sim N(\mu,\sigma)$. The expectation and higher moments of $X$ are expressed in terms of the logistic-normal integral and its generalizations 
+The logistic-normal random variable $X \sim logitnorm(\mu,\sigma)$ is defined as $X=\frac{1}{1+e^{-Z}}$ with $Z\sim N(\mu,\sigma)$. The expectation and higher moments of $X$ are expressed in terms of the logistic-normal integral and its generalizations. The first two moments are
 
 $$\mathbb{E}[X]=\varphi(-\mu,\sigma^2)$$
 
