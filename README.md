@@ -88,7 +88,7 @@ vd <- data.frame("exact"=v1, "Poisson" = v2, "diff"=v3)
 vd
 ```
 
-Keeping N=10 terms in the Poisson sum, the error is reasonably small for t sufficiently large (above 0.5), and all x.
+Keeping N=10 terms in the Poisson sum, the error is reasonably small for $t$ sufficiently large ($t > 0.5$), and all $x$.
 
 <img width="312" alt="test2" src="https://user-images.githubusercontent.com/60016102/204109785-b503943a-b339-4984-831d-ab8b58c1115b.png">
 
@@ -96,5 +96,12 @@ For small t, the exact evaluation gives the values of $\varphi(z,t)$ on a fine g
 
 <img width="697" alt="varphit0p1" src="https://user-images.githubusercontent.com/60016102/204840327-ea06d9eb-72ba-4068-8590-438c3b5df258.png">
 
+The function **varphi1(z,t,Nmax,eps)** computes $\varphi_1(z,t)$ by central finite differences in $z$ with step $eps$. Default values $Nmax=12,eps=10^{-6}$
 
+The function **momentsLogisticNorm(mu,sig,Nmax)** computes the mean and variance of a logistic-normal random variable $Z \sim logitnorm(\mu,\sigma)$
+
+```
+> momentsLogisticNorm(0.6,0.5)
+[1] 0.6381209 0.0120817
+'''
 
