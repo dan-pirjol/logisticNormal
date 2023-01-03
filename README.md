@@ -103,5 +103,5 @@ The function **momentsLogisticNorm(mu,sig,Nmax)** computes the mean and variance
 ```
 > momentsLogisticNorm(0.6,0.5)
 [1] 0.6381209 0.0120817
-'''
+```
 
