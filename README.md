@@ -1,7 +1,5 @@
 # logisticNormal
-R functions for the evaluation of the logistic-normal integral using the methods proposed in 
-
->D.Pirjol, The logistic-normal integral and its generalizations, Journal of Computational and Applied Mathematics 237, 460-469 (2012)
+R functions for the evaluation of the logistic-normal integral using the methods proposed in [Pirjol (2013)](https://www.sciencedirect.com/science/article/pii/S0377042712002518)
 
 In this paper the logistic-normal integral is defined as $$\varphi(z,t)=\int_{-\infty}^\infty \frac{1}{1+e^x} e^{-\frac{1}{2t}(x-z)^2} \frac{dx}{\sqrt{2\pi t}}$$
 
