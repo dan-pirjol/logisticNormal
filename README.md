@@ -9,7 +9,7 @@ The function $\varphi(z,t)$ has the properties:
 
 * For any $z\in \mathbb{R}$, we have $\varphi(z+t,t)= e^{-z-\frac12 t} (1 - \varphi(z,t))$
 
-Using $\varphi(0,t)=\frac12$ (which follows by taking $z=0$ in the first relation), gives exact evaluations at $z=kt$ with $k\in \mathbb{Z}$. Remarkably, the recursion relation implies that knowledge of $\varphi(z,t)$ in an interval in $z$ of length $t$ is sufficient to determine it anywhere else. The recursion relation can be used to derive also a Poisson summation formula for $\varphi(z,t)$. 
+Using $\varphi(0,t)=\frac12$ (which follows by taking $z=0$ in the first relation), repeated application of the recursion relation gives exact evaluations at $z=kt$ with $k\in \mathbb{Z}$. Remarkably, the recursion relation implies that knowledge of $\varphi(z,t)$ in an interval in $z$ of length $t$ is sufficient to determine it anywhere else. The recursion relation can be used to derive also a Poisson summation formula for $\varphi(z,t)$. 
 
 $\varphi(z,t)$ is related to the [Mordell integral](https://doi.org/10.1007/BF02547795). This relation is discussed further in:
 
