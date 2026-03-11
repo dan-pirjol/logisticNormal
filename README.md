@@ -11,9 +11,7 @@ The function $\varphi(z,t)$ has the properties:
 
 Using $\varphi(0,t)=\frac12$ (which follows by taking $z=0$ in the first relation), repeated application of the recursion relation gives exact evaluations at $z=kt$ with $k\in \mathbb{Z}$. Remarkably, the recursion relation implies that knowledge of $\varphi(z,t)$ in an interval in $z$ of length $t$ is sufficient to determine it anywhere else. The recursion relation can be used to derive also a Poisson summation formula for $\varphi(z,t)$. 
 
-$\varphi(z,t)$ is related to the [Mordell integral](https://doi.org/10.1007/BF02547795). This relation is discussed further in:
-
->D. Pirjol, Addendum: The logistic-normal integral and its generalizations, Journal of Computational and Applied Mathematics 237, 460-469 (2013)
+$\varphi(z,t)$ is related to the [Mordell integral](https://doi.org/10.1007/BF02547795). This relation is discussed further in [this note](https://www.sciencedirect.com/science/article/pii/S0377042713005207).
 
 The function **phiLogisticNormal(z,t,Nmax)** evaluates $\varphi(z,t)$ by Poisson summation truncating the sum to $Nmax$ terms. 
 
