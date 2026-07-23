@@ -49,7 +49,8 @@ $$\mathbb{E}[X^2] = e^{\mu+\frac12\sigma^2} \Big( -\frac{1}{\sigma^2} \varphi_1(
 ## **Sample usage**
 
 ```
-# plot the logistic-normal integral 
+# plot the logistic-normal integral
+source("LogisticNormalFunctions.R")
 x <- seq(-5,5, 0.1)
 n <- length(x)
 
