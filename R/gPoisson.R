@@ -22,7 +22,7 @@ gPoisson <- function(x,t,Nmax=5){
   }
 
   
-  for (j in 0:2*Nmax-1){
+  for (j in 0:(2*Nmax-1)){
     k <- j-Nmax+1
     fact <- q1^(k*k-0.25)
     den <- 1.0 - q1^(2*k-1)
