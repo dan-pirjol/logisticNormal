@@ -86,7 +86,7 @@ vd
 
 Keeping N=10 terms in the Poisson sum, the error is reasonably small for $t$ sufficiently large ($t > 0.5$), and all $x$.
 
-<img width="312" alt="test2" src="https://user-images.githubusercontent.com/60016102/204109785-b503943a-b339-4984-831d-ab8b58c1115b.png">
+<img width="322" height="195" alt="phi0diffExact" src="https://github.com/user-attachments/assets/206786e4-8de4-4c5c-9850-523349f5bd62" />
 
 For small t, the exact evaluation gives the values of $\varphi(z,t)$ on a fine grid with step $t$. Its values at other points can be obtained by interpolation. In the example below the blue dots show the exact values for $\varphi(k t, t)$ with $t=0.1$.
 
